@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Profiles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-image: url('http://duskrpg.altervista.org/themes/advanced/imgs/main/background_1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 150px;
+            padding-left: 50px;
+        }
+        
+        .iframe-wrapper {
+            border: none;
+            background-color: transparent;
+            flex-shrink: 0;
+        }
+        
+        .iframe-wrapper:first-child {
+            margin-top: 30px;
+        }
+        
+        .iframe-wrapper:last-child {
+            margin-top: 300px;
+            position: relative;
+        }
+        
+        .sticker-wrapper {
+            position: absolute;
+            top: -280px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        
+        iframe {
+            border: none;
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iframe-wrapper">
+            <iframe src="overlay-content.html" width="500" height="650" scrolling="no"></iframe>
+        </div>
+        
+        <div class="iframe-wrapper">
+            <div class="sticker-wrapper">
+                <iframe src="sticker.html" width="200" height="250" scrolling="no"></iframe>
+            </div>
+            <iframe src="milo-profile.html" width="420" height="390" scrolling="no"></iframe>
+        </div>
+    </div>
+</body>
+</html>

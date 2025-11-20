@@ -1,0 +1,45 @@
+@import url('https://unpkg.com/normalize.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+    background: transparent;
+}
+
+.sticker {
+    width: clamp(200px, 35vmin, 400px);
+    overflow: visible;
+    filter: url('#sticker');
+}
+
+svg {
+    overflow: visible !important;
+}
+
+[data-pointer-lighting='true'] {
+    cursor: none;
+}
+
+feSpecularLighting {
+    opacity: 0.4;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
